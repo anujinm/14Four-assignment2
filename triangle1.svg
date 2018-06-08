@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="201px" height="181px" viewBox="0 0 201 181" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Fill 5</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#FE9A8B" offset="0%"></stop>
+            <stop stop-color="#FD868C" offset="40.8502073%"></stop>
+            <stop stop-color="#F9748F" offset="73.1505102%"></stop>
+            <stop stop-color="#F78CA0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.188688859">
+        <g id="Blue-Customer-Service-Page" transform="translate(-142.000000, -523.000000)" fill="url(#linearGradient-1)">
+            <g id="Group-31" transform="translate(-82.000000, -655.000000)">
+                <g id="Fill-5">
+                    <path d="M227.412492,1346.30559 C213.961924,1344.42225 209.79484,1333.95623 218.171136,1323.09507 L255.134761,1275.07239 C263.474046,1264.2264 277.237889,1246.42352 285.569821,1235.59511 L322.516125,1187.56497 C330.90239,1176.72884 341.910459,1178.24468 347.004669,1191.03926 L410.482913,1350.47077 C415.592076,1363.30291 408.726168,1372.1905 395.255662,1370.25708 L335.8091,1361.77573 C322.402896,1359.85964 300.314854,1356.75551 286.876375,1354.7944 L227.412492,1346.30559 Z" style="mix-blend-mode: color-burn;" transform="translate(313.010005, 1275.431629) rotate(-9.000000) translate(-313.010005, -1275.431629) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
