@@ -1,9 +1,9 @@
 <template lang="pug">
   .upperText
-    p - What we do
+    p.t5 - What we do
     h5 Providing the 
     h5 best customer service 
-    p Spicy jalapeno bacon ipsum dolor amet do prosciutto pork. Meatball short loin in aliqua, 
+    p.t5.low Spicy jalapeno bacon ipsum dolor amet do prosciutto pork. Meatball short loin in aliqua. 
     button Learn More &nbsp; &#8594;   
 </template>
 
@@ -38,15 +38,23 @@ export default {
   max-height: 400px;
   color: white;
   h5 {
-    margin-bottom: 10px;;
+    margin-bottom: 10px;
+    line-height: 25px;
   }
   p {
     font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    &.low{
+      line-height: 20px;
+      padding-bottom: 30px;
+    }
   }
   button {
-    color: blue;
-    font-size: 15px;
-    padding: 8px;
+    color: #2611C9;
+    font-size: 12px;
+    padding: 12px;
+    border-radius: 3px;
   }
   @media #{$mobile} {
     h5 {font-size: 20px;}

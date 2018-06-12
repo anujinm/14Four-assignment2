@@ -8,7 +8,7 @@
           lower-box-2.box
         .col-sm-3
           lower-box-3.box
-      .row.justify-content-center
+      .row.justify-content-center.lowertext
         .col-sm-2
           lower-text-1(:number="number1" :word="word1")
         .col-sm-2
@@ -58,41 +58,52 @@ export default {
 
 <style lang="scss">
 @import "../styles/_variables";
+.container {
+}
 .lower {
   position: relative;
   overflow: hidden;
-  height: 18em;
+  height: 420px;
   .box {
     &:hover {
     transform: scale(1.1,1.1);
     transition: all .5s ease-in-out;
     }
     img { max-width: 60px; }
-    h5 { font-size: 20px; }
-    p { font-size: 15px; color: gray; }
+    h5 { font-size: 18px; padding-top: 10px; margin-bottom : 5px;}
+    p { font-size: 13px; color: #a8a8a8; margin:0; padding-bottom: 5px;}
     button {
       font-size: 10px;
-      width: 50%;
-      height: 10%;;
+      width: 40%;
+      height: 12%;
       border: 1px solid $main-blue;
+      padding: 5px;
+      cursor: pointer;
+      &:hover { transform: scale(1.2,1.2); }
     }
     transition: all .5s ease-in-out;
-    padding: 20px;
+    padding: 15px;
     font-family: Arial;
-    width: 200px;
-    height: 250px;
-    box-shadow: 5px 5px 25px 5px gray;
+    width: 210px;
+    height: 220px;
+    padding: 20px;
+    box-shadow: 1px 2px 20px 2px #c7c7c7;
+    border-radius: 5px;
     }
   .row {
-    padding: 40px;
+    padding: 10px;
   }
+  .lowertext {
+    padding-top: 50px;
+  }
+
   .circleGray {
     border-radius: 50%;
     width: 120%;
     height: 150%;
     background: #EBEBEB;
     position: absolute;
-    bottom: -105%;
+    bottom: -98%;
     right: -50%; 
     z-index: -1;
     overflow: hidden;

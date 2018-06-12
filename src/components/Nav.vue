@@ -1,7 +1,7 @@
 <template lang="pug">
   .nav
     //- router-link.t4(to="/" v-bind:class="{ isInactive: !isRoot }") Landing
-    button.solutions(@click="showOptions = !showOptions") Solutions  ▾
+    button.t5.solutions(@click="showOptions = !showOptions") Solutions  ▾
     .options.sol(v-if="showOptions")
       a solution 1
       a solution 2
@@ -53,11 +53,51 @@ export default {
 .nav {
   z-index: 1;
   left: 10%;
-  top: 3%;
+  top: 2.0%;
   position: absolute;
   br {
     visibility: hidden;
   }
+  
+  a {
+    color: white;
+    display: inline-block;
+    padding: 10px;
+    font-size: 14px;
+    &:hover {
+      color: gray;
+      cursor: pointer;
+    }
+  }
+  button {
+    outline: none;
+    font-size: 14px;
+    font-weight: 100 !important;
+    &.solutions {
+      background: transparent;
+      border: none;
+      color: white;
+      font-weight: normal;
+    }
+    &.right {
+      border: none;
+      position: relative;
+      right: -50%;
+      margin-left: 10px;
+      &.demo {
+        font-size: 12px;
+        background: $light-blue;
+        border-radius: 2px;
+        width: 75px;
+        height: 30px;
+      }
+      &.language {
+        background: transparent;
+        color: white;
+      }
+    }
+  }
+
   .options {
     border-bottom: 1px solid white;
     color: black;
@@ -80,6 +120,7 @@ export default {
       transform: translateY(100%);
       width: 90px;
       height: 80px;
+      
     }
     &.lan {
       z-index: 1;
@@ -91,48 +132,21 @@ export default {
       height: 50px;
     }
   }
-  a {
-    color: white;
-    display: inline-block;
-    padding: 10px;
-    font-size: 17px;
-    &:hover {
-      color: gray;
-      cursor: pointer;
-    }
-  }
-  button {
-    outline: none;
-    font-size: 15px;
-    &.solutions {
-      background: transparent;
-      border: none;
-      color: white;
-    }
-    &.right {
-      border: none;
-      position: relative;
-      right: -45%;
-      margin-left: 10px;
-      &.demo {
-        background: $light-blue;
-        border-radius: 20px;
-        width: 80px;
-        height: 30px;
-      }
-      &.language {
-        background: transparent;
-        color: white;
-      }
-    }
-  }
 
   .router-link-active {
-      border: none;
+    border: none;
     &.isInactive {
       background: transparent;
-      color: $brandPrimary;
-      border-top: 1px solid white;
+      color: $white; 
+    }
+    &.isInactive:before{
+      content: "";
+      height: 30px;
+      display: block;
+      margin: 0 auto;
+      width: 90%;
+      margin-top: -30px;
+      border-top: 2px solid white;
     }
   }
 

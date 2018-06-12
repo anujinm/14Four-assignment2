@@ -46,14 +46,47 @@ export default {
 <style scoped lang="scss">
 @import "../styles/_variables";
 .upper {
+  .triangles {
+    background: linear-gradient(#c7c7c7, #202020);
+    filter: brightness(20%);
+    opacity: 0.5;
+    .triangle1 {
+      left: 9%;
+      top: 66%;
+      width: 23%;
+      height: 23%;
+      position: absolute;
+    }
+    .triangle2 {
+      left: 13%;
+      top: 58%;
+      width: 23%;
+      height: 23%;
+      position: absolute;
+    }
+    .triangle3 {
+      left: 55%;
+      top: 23%;
+      width: 20%;
+      height: 20%;
+      position: absolute;
+    }
+    .triangle4 {
+      left: 62%;
+      top: 19%;
+      width: 10%;
+      height: 10%;
+      position: absolute;
+    }
+  }
   .links {
     position: absolute;
     transform: rotate(90deg);
     transform-origin: left top 0;
     color: white;
-    top: 45%;
-    left: 10%;
-    font-size: 15px;
+    top: 56%;
+    left: 11%;
+    font-size: 13px;
     i {
       padding: 10px;
       transform: rotate(270deg);
@@ -63,57 +96,26 @@ export default {
   .textBox {
     width: 100%;
     height: 100%;
-    top: 25%;
+    top: 28%;
     left: 20%;
     position: absolute;
   }
-  .triangles {
-    opacity: 0.3;
-    .triangle1 {
-      left: 3%;
-      top: 50%;
-      width: 30%;
-      height: 30%;
-      position: absolute;
-    }
-    .triangle2 {
-      left: 9%;
-      top: 45%;
-      width: 30%;
-      height: 30%;
-      position: absolute;
-    }
-    .triangle3 {
-      left: 55%;
-      top: 20%;
-      width: 20%;
-      height: 20%;
-      position: absolute;
-    }
-    .triangle4 {
-      left: 60%;
-      top: 15%;
-      width: 15%;
-      height: 15%;
-      position: absolute;
-    }
-  }
   .laptop {
     position: absolute;
-    width: 40%;
-    height: 40%;
-    top: 30%;
-    left: 50%;
+    width: 34%;
+    height: 34%;
+    top: 32%;
+    left: 53%;
   }
   .message {
     position: absolute;
-    width: 4%;
-    height: 4%;
-    top: 38%;
-    left: 66%;
+    width: 5%;
+    height: 5%;
+    top: 40%;
+    left: 65%;
   }
   .video {
-    color: gray;
+    color: #a8a8a8;
     font-size: 10px;
     letter-spacing: 2px;
     transform: rotate(90deg);
@@ -124,12 +126,12 @@ export default {
   }
   .circleBlue {
     border-radius: 50%;
-    width: 210%;
-    height: 250%;
+    width: 200%;
+    height: 270%;
     background: linear-gradient($main-purple, $main-blue);
     position: absolute;
-    top: -150%;
-    left: -110%; 
+    top: -170%;
+    left: -97%; 
     z-index: -1;
     overflow: hidden;
   }
@@ -146,7 +148,7 @@ export default {
   }
   position: relative;
   overflow: hidden;
-  height: 18em;
+  height: 600px;
   @media #{$mobile} {
     .laptop {
       top:60%;

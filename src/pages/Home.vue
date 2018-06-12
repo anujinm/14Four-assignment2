@@ -39,7 +39,7 @@ export default {
   position: relative;
   overflow: hidden;
   /* background: lightblue; */
-  height: 36em;
+  height: 1020px;
   @media #{$mobile} {
     height: auto;
   }

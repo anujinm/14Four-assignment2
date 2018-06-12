@@ -34,9 +34,10 @@ export default {
 
 <style scoped lang="scss">
 .lowerBox {
+  h5{color: white;}
   button {
     border: 1px solid white;
   }
-  background: #2936B5;
+  background: #2B1ECD;
 }
 </style>

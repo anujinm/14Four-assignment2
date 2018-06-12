@@ -35,12 +35,13 @@ export default {
 @import "../styles/_variables";
 .lowerText {
   background: transparent;
-  color: blue;
+  color: #2611C9;
   text-align: center;
   p {
-    font-size: 20px;
+    font-size: 15px;
   }
   h5 {
+    font-size: 27px;
     margin: 0;
   }
   @media #{$mobile} {
