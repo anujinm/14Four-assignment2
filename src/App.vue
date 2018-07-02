@@ -40,7 +40,7 @@ export default {
 @import "./styles/main";
 #app {
   border: 1px solid;
-  font-family: Arial;
+  font-family: 'Roboto', sans-serif;
   .full { visibility: hidden; }
   @media #{$mobile} {
     .normal { visibility: hidden; }

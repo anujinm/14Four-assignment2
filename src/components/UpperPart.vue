@@ -10,6 +10,7 @@
       i.fab.fa-twitter
       i.fab.fa-linkedin-in
     upperText.textBox
+    img.mouse(src='../../mouse.svg')
     img.laptop(src='../../ipad.svg')
     img.message(src='../../message.svg')
     p.video PLAY VIDEO &nbsp; &mdash;
@@ -46,37 +47,45 @@ export default {
 <style scoped lang="scss">
 @import "../styles/_variables";
 .upper {
+  font-family: 'Roboto', sans-serif;
   .triangles {
-    background: linear-gradient(#c7c7c7, #202020);
+    // background: linear-gradient(#c7c7c7, #202020);
     filter: brightness(20%);
+    position: absolute;
+    top: -5%;
+    width: 100%;
+    height: 100%;
     opacity: 0.5;
     .triangle1 {
-      left: 9%;
+      left: 3%;
       top: 66%;
       width: 23%;
       height: 23%;
-      position: absolute;
+      position: relative;
+      margin-left: 40px;
+      // margin-top: 20x;
+      // margin-bottom: -20px;
     }
     .triangle2 {
-      left: 13%;
+      left: -15%;
       top: 58%;
       width: 23%;
       height: 23%;
-      position: absolute;
+      position: relative;
     }
     .triangle3 {
-      left: 55%;
-      top: 23%;
+      left: 5%;
+      top: 26%;
       width: 20%;
       height: 20%;
-      position: absolute;
+      position: relative;
     }
     .triangle4 {
-      left: 62%;
-      top: 19%;
-      width: 10%;
-      height: 10%;
-      position: absolute;
+      left: -7%;
+      top: 10%;
+      width: 8%;
+      height: 8%;
+      position: relative;
     }
   }
   .links {
@@ -100,6 +109,12 @@ export default {
     left: 20%;
     position: absolute;
   }
+  .mouse {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    width: 18px;
+  }
   .laptop {
     position: absolute;
     width: 34%;
@@ -121,17 +136,18 @@ export default {
     transform: rotate(90deg);
     transform-origin: left top 0;
     position: absolute;
-    left: 90%;
+    left: 88%;
     top: 38%;
+    width: 100%;
   }
   .circleBlue {
     border-radius: 50%;
     width: 200%;
     height: 270%;
-    background: linear-gradient($main-purple, $main-blue);
+    background: linear-gradient(to bottom right ,$main-purple, $main-blue);
     position: absolute;
     top: -170%;
-    left: -97%; 
+    left: -97%;
     z-index: -1;
     overflow: hidden;
   }
@@ -142,7 +158,7 @@ export default {
     background: #EBEBEB;
     position: absolute;
     top: -113%;
-    left: -100%; 
+    left: -100%;
     z-index: -2;
     overflow: hidden;
   }
@@ -150,18 +166,36 @@ export default {
   overflow: hidden;
   height: 600px;
   @media #{$mobile} {
+    .textBox {
+      top: 10%;
+    }
+    .mouse {
+      top: 50%;
+    }
     .laptop {
-      top:60%;
-      left: 20%
+      top: 50%;
+      left: 18%
     }
     .message {
-      top:75%;
-      left: 34%
+      top:61%;
+      left: 29%;
     }
     .video {
       font-size: 5px;
-      top:73%;
-      left: 65%
+      top: 61%;
+      left: 56%
+    }
+  }
+  @media screen and (min-width: 1600px) {
+    .mouse { left: 40%; }
+    .laptop{
+      left: 33%;
+    }
+    .message{
+      left: 46%;
+    }
+    .video{
+      left: 60%
     }
   }
 }

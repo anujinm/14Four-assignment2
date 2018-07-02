@@ -34,15 +34,19 @@ export default {
 <style scoped lang="scss">
 @import "../styles/_variables";
 .lowerText {
-  background: transparent;
-  color: #2611C9;
+  font-family: 'Roboto';
   text-align: center;
   p {
     font-size: 15px;
+    letter-spacing: 1px;
+    color: #2611C9;
   }
   h5 {
     font-size: 27px;
-    margin: 0;
+    margin-bottom: 5px;
+    background: -webkit-linear-gradient(#4762E2, #2611C9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   @media #{$mobile} {
     h5 {font-size: 15px;}

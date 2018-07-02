@@ -40,7 +40,7 @@ export default {
   props: [],
   data () {
     return {
-      showMenu: true,
+      showMenu: false,
       showOptions: false,
       showOptionsLang: false
     }
@@ -67,20 +67,29 @@ export default {
 @import "../styles/_variables";
 @import "../styles/_mixins";
 .nav {
+  font-family: 'Roboto', sans-serif;
   z-index: 1;
   position: absolute;
   left: 5%;
-  top: 1%; 
+  // top: 1%; 
+  // background: $main-blue;
   .hamburger {
+    margin-top: 10px;
     z-index: 3;
   }
-  button {background: transparent; border: none; outline: none; height: 30px;}
+  button {
+    background: transparent;
+    border: none; 
+    outline: none; 
+    height: 30px;
+    z-index: 200;
+   }
   .show{
     width: 414px;
     height: 1550px;
     margin-left:-20px;
     margin-top: -40px;
-    background: linear-gradient($main-purple, $main-blue); 
+    background: $main-blue;
     z-index: 2;
     transition: all 0.5s ease-in-out; 
   }
@@ -89,6 +98,7 @@ export default {
   }
   .lines {
     a { 
+      font-size: 20px;
       color: white; 
       // border-bottom: 2px solid white;
       &:hover {color: gray;}
@@ -96,11 +106,14 @@ export default {
     button { 
       color: white;
       margin:10px;
+      font-size: 20px;
       &.demo {
+        color: black;
         background: $light-blue;
+        font-size: 20px;
         height:40px;
         width: 90px;
-        border-radius: 20px;;
+        border-radius: 10px;;
         &:hover { transform: scale(1.1,1.1); }
       } 
     }

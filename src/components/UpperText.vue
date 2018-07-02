@@ -52,9 +52,13 @@ export default {
   }
   button {
     color: #2611C9;
+    background: white;
     font-size: 12px;
     padding: 12px;
     border-radius: 3px;
+    border: none;
+    outline: none;
+    cursor: pointer;
   }
   @media #{$mobile} {
     h5 {font-size: 20px;}

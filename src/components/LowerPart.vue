@@ -58,13 +58,19 @@ export default {
 
 <style lang="scss">
 @import "../styles/_variables";
-.container {
-}
 .lower {
   position: relative;
   overflow: hidden;
   height: 420px;
-  .box {
+  .box { 
+    transition: all .5s ease-in-out;
+    padding: 15px;
+    font-family: Arial;
+    width: 210px;
+    height: 220px;
+    padding: 20px;
+    box-shadow: 1px 2px 10px 0px #c7c7c7;
+    border-radius: 5px;
     &:hover {
     transform: scale(1.1,1.1);
     transition: all .5s ease-in-out;
@@ -74,21 +80,17 @@ export default {
     p { font-size: 13px; color: #a8a8a8; margin:0; padding-bottom: 5px;}
     button {
       font-size: 10px;
-      width: 40%;
-      height: 12%;
-      border: 1px solid $main-blue;
-      padding: 5px;
+      width: 45%;
+      height: 15%;
+      border: 0.6px solid $main-blue;
+      padding: 7px;
+      background: white;
       cursor: pointer;
       &:hover { transform: scale(1.2,1.2); }
+      border-radius: 2px;
+      outline: none;
     }
-    transition: all .5s ease-in-out;
-    padding: 15px;
-    font-family: Arial;
-    width: 210px;
-    height: 220px;
-    padding: 20px;
-    box-shadow: 1px 2px 20px 2px #c7c7c7;
-    border-radius: 5px;
+   
     }
   .row {
     padding: 10px;
@@ -112,7 +114,7 @@ export default {
   @media #{$mobile} {
     height: auto;
     .col-sm-3 {
-      left: 13%;
+      left: 17%;
       padding-bottom: 20px;
     }
   }

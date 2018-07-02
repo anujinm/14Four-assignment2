@@ -51,10 +51,12 @@ export default {
 @import "../styles/_variables";
 @import "../styles/_mixins";
 .nav {
+  font-family: 'Roboto', sans-serif;
   z-index: 1;
   left: 10%;
   top: 2.0%;
   position: absolute;
+  width: 100%;
   br {
     visibility: hidden;
   }
@@ -70,6 +72,7 @@ export default {
     }
   }
   button {
+    cursor: pointer;
     outline: none;
     font-size: 14px;
     font-weight: 100 !important;
@@ -82,7 +85,7 @@ export default {
     &.right {
       border: none;
       position: relative;
-      right: -50%;
+      right: -45%;
       margin-left: 10px;
       &.demo {
         font-size: 12px;
@@ -90,6 +93,7 @@ export default {
         border-radius: 2px;
         width: 75px;
         height: 30px;
+        box-shadow: 0px 2px 8px rgb(9, 9, 77);
       }
       &.language {
         background: transparent;
@@ -102,12 +106,14 @@ export default {
     border-bottom: 1px solid white;
     color: black;
     background: transparent;
+    line-height: 0;
     a {
-      font-size: 15px;
+      font-size: 12px;
       font-weight: 100;
     }
     p {
       color: white;
+      position: relative;
       font-size: 10px;
       font-weight: 100;
     }
@@ -118,18 +124,18 @@ export default {
       position: absolute;
       display: block;
       transform: translateY(100%);
-      width: 90px;
-      height: 80px;
+      width: 80px;
+      height: 45px;
       
     }
     &.lan {
       z-index: 1;
       bottom: 0;
-      right: -45%;
-      position: absolute;
+      right: -42%;
+      position: relative;
       transform: translateY(100%);
-      width: 70px;
-      height: 50px;
+      width: 40px;
+      height: 35px;
     }
   }
 
@@ -141,11 +147,11 @@ export default {
     }
     &.isInactive:before{
       content: "";
-      height: 30px;
+      height: 27px;
       display: block;
       margin: 0 auto;
       width: 90%;
-      margin-top: -30px;
+      margin-top: -28px;
       border-top: 2px solid white;
     }
   }
@@ -176,5 +182,30 @@ export default {
       }
     }
   }
+  @media screen and (max-width: 1400px) {
+    button {
+      &.right{
+        right: -33%;
+      }
+    }
+    .options {
+      &.lan {
+        right: -30%;
+      }
+    }
+  }
+  @media #{$tablet} {
+    button {
+      &.right{
+        right: -10%;
+      }
+    }
+    .options {
+      &.lan {
+        right: -5%;
+      }
+    }
+  }
+  
 }
 </style>
